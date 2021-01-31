@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" xmlns: xmlns: xmlns:>
+<head>
+    <style>
+body { background:  #c7b39b url(src/main/resources/cover.jpg);
+background-repeat:no-repeat;
+ background-size:cover;}
+h1,h2 {color: gold}
+h3,h4,h5,h6,h7,h8,h10,h11 {color: orange}
+p1,p9 {color: red}
+h9 {color: red}
+p2,p3 {color: yellow}
+label {color: black}
+label { background: green}
+table { width: 100%;  background: white;  color: white;border-spacing: 1px; }
+td, th { background: maroon; padding: 5px;}
+    </style>
+    <meta charset="UTF-8">
+    <title>Teg input, attribute required</title>
+</head>
+<body>
+<h1>Cartridges</h1>
+<table style="width:100%">
+    <tr>
+        <th>Caliber</th>
+        <th>Bullet type</th>
+        <th>Brand</th>
+        <th>Price,$</th>
+    </tr>
+    <tr>
+        <td>308 Win</td>
+        <td>SP</td>
+        <td>PPU PARTIZAN</td>
+        <td>2.23</td>
+    </tr>
+    <tr>
+        <td>7.62x54R</td>
+        <td>FMJ</td>
+        <td>TulAmmo</td>
+        <td>0.87</td>
+    </tr>
+    <tr>
+        <td>7.62x51</td>
+        <td>SP</td>
+        <td>TulAmmo</td>
+        <td>0.76</td>
+    </tr>
+</table>
+<h1>Register for an order</h1>
+<p1>Please, fill out in the required fields*</p1>
+<form action="/action_page.php">
+    <label for="№permit">№ of a permit to carry a weapon;* </label><br>
+    <input type="text" id="№permit" name="№permit"><br><br>
+    <label for="vperiod">Validity period of the permit:*</label><br>
+    <input type="text" id="vperiod" name="vperiod"><br><br>
+    <label for="fname">First name:*</label><br>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:*</label><br>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<h3>Type of delivery</h3>
+<form action="/action_page.php">
+    <input type="checkbox" id="tdelivery 1" name="tdelivery 1" value="Pick-up service">
+    <label for="tdelivery 1">Pick-up service</label><br>
+    <input type="checkbox" id="tdelivery 2" name="tdelivery 2" value="delivery">
+    <label for="tdelivery 2"> Delivery</label><br>
+    <input type="submit" value="Submit">
+</form>
+<h4>Payment type </h4>
+<form action="/action_page.php">
+    <input type="checkbox" id="visa" name="visa" value="Visa">
+    <label for="visa"> Visa</label><br>
+    <input type="checkbox" id="masterc" name="masterc" value="Master">
+    <label for="masterc"> Master</label><br>
+    <input type="checkbox" id="cash" name="cash" value="Сash">
+    <label for="cash"> Cash</label><br>
+    <input type="submit" value="Submit">
+</form>
+<h5>Sex</h5>
+<form action="/action_page.php">
+    <label for="sex">Choose a sex:</label>
+    <select name="sex" id="sex">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="it">It</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+<p>
+    <h7 style="font-size: 25px;">Order confirmation</h7>
+    <button type="button" onclick="alert('Thank you for ordering!')"> --------------</button>
+</p>
+<p>
+    <h8>
+        <img src="bear.jpg" alt="Girl in a jacket" width="390" height="450">
+    </h8>
+</p>
+
+<footer>
+    <p>
+        <h9 style="font-size: 32px;">Useful tips for a young hunter</h9>
+    </p>
+    <p2 style="font-size: 25px;">Observe the rules of hunting and hunting ethics!</p2>
+    <p>
+    </p>
+    <p3 style="font-size: 25px;"> We strongly recommend not to wake the bears in winter!!</p3>
+    <p>
+        <h11 style="font-size: 25px;">Belarusian Society of Hunters and Fishermen</h11>
+    </p>
+    <p4 style="font-size: 17px;">
+
+        <a href="https://rgooboor.by/">Belarusian Society of Hunters and Fishermen</a>
+    </p4>
+    <p>
+    </p>
+    <p5>
+        <h11 style="font-size: 25px;">Belgovhanting</h11>
+    </p5>
+
+    <p6 style="font-size: 17px;">
+        <p>
+        </p>
+        <a href="https://belgosohota.by/">Belgovhanting</a>
+    </p6>
+</footer>
+</body>
+</html>
